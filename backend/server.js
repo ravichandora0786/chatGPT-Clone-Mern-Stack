@@ -6,7 +6,7 @@ const colors = require("colors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const errorHandler = require("./middelwares/errorMiddleware");
-
+ 
 //routes path
 const authRoutes = require("./routes/authRoutes");
 

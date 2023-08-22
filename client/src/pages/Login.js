@@ -17,7 +17,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://mern-clonechatgpt.onrender.com/api/v1/auth/login", { email, password });
+      await axios.post("http://localhost:5000/api/v1/auth/login", { email, password });
       toast.success("Login Successfully");
       localStorage.setItem("authToken", true);
       navigate("/");
